@@ -1,0 +1,76 @@
+---
+layout: default
+---
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {{ page.date | date: date_format }}
+      </time>
+      {%- if page.author -%}
+        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
+      {%- endif -%}</p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    <p><img src="//docs.google.com/uc?id={{ page.img }}"></p>
+    <p><strong>Proses produksi hanya 1-2 hari jadi dan siap kirim</strong></p>
+    <div>&nbsp;</div>
+    Hardcase terbuat dari 100% plastik
+    <br>
+    1. Kuat dan ringan terbuat dari material Plastik policarbonate (Hardcase)
+    2. Dirancang untuk tetap dapat mengakses semua port dan function handphone anda
+    3. Diprint dengan teknologi sublimasi heat press, hasil anti air dan tidak mudah mengelupas.
+    4. Mudah di pasang dan dikeluarkan - Snap on Snap off
+    5. Bisa menggunakan gambar / foto sendiri
+    <div>&nbsp;</div>
+    Design di atas bisa untuk berbagai merk dan tipe HP
+    #note: Hasil gambar bisa sama bisa sedikit beda , karena yang terlihat di layar monitor/gadgets anda bisa berbeda pencahayaannya dan kualitas layarnya
+    <div>&nbsp;</div>
+    Happy Shopping.
+    Terima kasih sudah mengunjungi toko kami
+    <div>&nbsp;</div>
+    <p><strong>Daftar Tipe Hp yang tersedia:</strong></p>
+    <br>
+    <p><strong>Apple</strong></p>
+    iPhone 5/ 5S / SE, iPhone 5C, iPhone 6 / 6S, iPhone 6 Plus / 6S Plus, iPhone 7, iPhone 7 Plus
+    <br>
+    <p><strong>Samsung</strong></p>
+    Samsung Galaxy S6, S6 Edge, S6 Edge Plus,S7, S7 Edge, S8, S8 Plus, S9, S9 Plus
+    Galaxy A3 (2016), A5 (2016), A7 (2016), Galaxy A3 (2017), A5 (2017), A7 (2017), A8, A8 plus
+    Galaxy C5, C7
+    Galaxy J2 (2016), J3 (2016), J5 (2016), J7 (2016), Grand Prime
+    Galaxy J2 (2017), J3 (2017), J5 (2017), J7 (2017)
+    <br>
+    <p><strong>Asus</strong></p>
+    Asus Zenfone 2 550 / 551 ML, Zenfone 5, Zenfone 6, Zenfone 2 Laser (ZE500 5inch), Zenfone Selfie
+    <br>
+    <p><strong>Lenovo</strong></p>
+    A6000, A7000, Lenovo Vibe k4
+    <br>
+    <p><strong>Xiaomi</strong></p>
+    Redmi 3, redmi 3s, Redmi 4, Redmi Note 3,Redmi Note 4, Mi 5, Mi Max, 
+    <br>
+    <p><strong>Vivo</strong></p>
+    Vivo V5, V5 Plus, V7, V7 Plus
+    <br>
+    <p><strong>Oppo</strong></p>
+    Oppo F1s, F1 Plus, neo 7, neo 9, f5, A39
+    <br>
+    <p><strong>LG</strong></p>
+    LG G5, G6
+    <br>
+    <p><strong>Sony</strong></p>
+    Sony Z5
+    <div>{{ content }}</div>
+  </div>
+
+  {%- if site.disqus.shortname -%}
+    {%- include disqus_comments.html -%}
+  {%- endif -%}
+
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</article>
