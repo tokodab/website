@@ -47,5 +47,5 @@ exclude:
 
 # pagination
 plugins: [jekyll-paginate]
-paginate: 500
+paginate: 100
 paginate_path: "/page:num/"
