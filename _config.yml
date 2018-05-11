@@ -45,7 +45,9 @@ exclude:
   - Gemfile
   - Gemfile.lock
 
-# pagination
-plugins: [jekyll-paginate]
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate
+
 paginate: 100
 paginate_path: "/page:num/"
