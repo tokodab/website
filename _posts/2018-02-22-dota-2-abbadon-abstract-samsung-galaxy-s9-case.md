@@ -1,7 +1,0 @@
----
-layout: post
-title: Dota 2 Abbadon Abstract Samsung Galaxy S9 Case
-tags: samsung galaxy s9
-categories: samsung
-img: 1kVcpYPQClF7bvtGLeGcuyRY-wO1U-6V7
----
